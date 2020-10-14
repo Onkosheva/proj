@@ -1,0 +1,126 @@
+a, a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans' ,sans-serif;
+}
+header{
+    font-family: 'lato',sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+
+}
+.logo{
+    font-size: 24px;
+}
+.top-menu__item{
+    margin-left: 33px;
+    position: relative;
+}
+.top-menu__item:before,
+.top-menu__item:after{
+    content:'';
+    position: absolute;
+    width: 120%;
+    height: 3px;
+    background-color: #292929;
+    bottom: -21px;
+    right: -10%;
+    transform: scale(0);
+    transition: .6s;
+}
+.top-menu__item:after{
+    width: 60%;
+    background-color: #Fcac45;
+
+}
+.top-menu__item:hover:before,
+.top-menu__item:hover:after{
+    transform: scale(1);
+}
+
+.hero{
+    background: black;
+}
+.hero-title{
+    color: #999;
+    font-size: 44px;
+    font-weight: 300;
+}
+.hero-desc{
+    font-size: 20px;
+}
+.hero-title span{
+    color: #Fcac45;
+    font-weight: 700;
+}
+.down-btn{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10%;
+}
+.sup-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #636363;
+}
+.about{
+    padding-top: 100px;
+}
+.about-heading{
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #282728;
+    margin: 20px 0 35px;
+    position: relative;
+}
+.about-heading:before{
+    content: '';
+    height: 5px;
+    width: 100px;
+    background-color: #Fcac45;
+    position: absolute;
+    bottom: -15px;
+
+}
+.about-info{
+    font-size:18px;
+    color: #6c6c6c;
+    margin-bottom: 30px;
+}
+.about-list{
+    padding: 0;
+    list-style: none;
+
+}
+.about-list__item{
+    margin-bottom: 10px;
+    color: #5a5a5a;
+}
+
+.about-list__item strong{
+    color: #000
+}
+.about-btn{
+    width: 193px;
+    height: 45px;
+    border: 1px solid #7f7f7f;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 40px;
+
+}
